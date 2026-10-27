@@ -1,0 +1,25 @@
+name: industrial_instruments
+description: Thirty-three polished Flutter measurement and equipment instruments with editable parameter presets, explicit units and controlled values.
+version: 0.2.1
+repository: https://github.com/Appu-Devloper/industrial_widgets
+issue_tracker: https://github.com/Appu-Devloper/industrial_widgets/issues
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+  flutter: '>=3.35.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+topics:
+  - widgets
+  - gauges
+  - visualization
+  - iot
+screenshots:
+  - description: Precision instruments on a light canvas
+    path: doc/assets/v020/catalog-light.png
+  - description: Pressure, temperature, level and electrical instrument studies
+    path: doc/assets/v020/reference-dark-320.png

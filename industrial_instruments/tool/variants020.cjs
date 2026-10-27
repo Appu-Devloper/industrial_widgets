@@ -1,0 +1,2 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage({viewport:{width:1280,height:1200}});for(const widget of [17,19]){await p.goto(`http://localhost:8767/?widget=${widget}&animate=true&theme=dark`);await p.locator('flutter-view').waitFor();await p.waitForTimeout(1400);for(let frame=0;frame<3;frame++){await p.screenshot({path:`doc/assets/v020/motion-${widget}-${frame}.png`});await p.waitForTimeout(400);}}await b.close();})();

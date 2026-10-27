@@ -1,0 +1,22 @@
+name: Validate industrial_instruments
+on: [push, pull_request]
+jobs:
+  flutter:
+    runs-on: macos-14
+    defaults:
+      run:
+        working-directory: industrial_instruments
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.35.6'
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: dart format --output=none --set-exit-if-changed lib test example/lib
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter pub get && flutter build web --release
+        working-directory: industrial_instruments/example
+      - run: flutter pub publish --dry-run

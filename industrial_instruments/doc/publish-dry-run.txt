@@ -1,0 +1,90 @@
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  clock 1.1.2 (1.1.3 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  lints 5.1.1 (6.1.0 available)
+  matcher 0.12.17 (0.12.20 available)
+  material_color_utilities 0.11.1 (0.13.1 available)
+  meta 1.16.0 (1.19.0 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.6 (0.7.15 available)
+  vector_math 2.2.0 (2.4.4 available)
+Got dependencies!
+10 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Publishing industrial_instruments 0.2.1 to https://pub.dev:
+├── CHANGELOG.md (1 KB)
+├── CONTRIBUTING.md (<1 KB)
+├── LICENSE (1 KB)
+├── README.md (3 KB)
+├── analysis_options.yaml (<1 KB)
+├── doc
+│   ├── BEHAVIOR.md (5 KB)
+│   ├── COMPLETION-0.2.0.md (1 KB)
+│   ├── COMPLETION.md (<1 KB)
+│   ├── CUSTOMIZATION.md (2 KB)
+│   ├── EXAMPLES.md (6 KB)
+│   ├── MIGRATION.md (1 KB)
+│   ├── PARAMETERS.md (3 KB)
+│   ├── RECORDING.md (1 KB)
+│   ├── VALIDATION.md (4 KB)
+│   └── assets
+│       └── v020
+│           ├── catalog-dark.png (102 KB)
+│           ├── catalog-light.png (103 KB)
+│           ├── contact-dark-0.png (157 KB)
+│           ├── contact-dark-1.png (124 KB)
+│           ├── contact-light-0.png (154 KB)
+│           ├── contact-light-1.png (120 KB)
+│           ├── reference-dark-180.png (51 KB)
+│           ├── reference-dark-320.png (56 KB)
+│           ├── reference-light-180.png (51 KB)
+│           └── reference-light-320.png (57 KB)
+├── example
+│   ├── README.md (<1 KB)
+│   ├── analysis_options.yaml (<1 KB)
+│   ├── lib
+│   │   ├── catalog.dart (10 KB)
+│   │   ├── main.dart (16 KB)
+│   │   └── reference.dart (3 KB)
+│   ├── pubspec.yaml (<1 KB)
+│   └── web
+│       ├── icon.svg (<1 KB)
+│       ├── index.html (1 KB)
+│       └── manifest.json (<1 KB)
+├── lib
+│   ├── industrial_instruments.dart (<1 KB)
+│   └── src
+│       ├── equipment.dart (9 KB)
+│       ├── gauges.dart (9 KB)
+│       ├── instruments.dart (16 KB)
+│       ├── levels.dart (7 KB)
+│       ├── models.dart (3 KB)
+│       ├── presets.dart (11 KB)
+│       ├── readout.dart (14 KB)
+│       ├── rendering.dart (52 KB)
+│       └── styles.dart (4 KB)
+├── pubspec.yaml (<1 KB)
+└── test
+    ├── generated_examples_test.dart (7 KB)
+    ├── geometry_test.dart (5 KB)
+    ├── instruments_test.dart (11 KB)
+    └── support
+        └── catalog.dart (8 KB)
+
+Total compressed archive size: 967 KB.
+Validating package...
+Package validation found the following hint:
+* The previous version is 0.1.0.
+  
+  It seems you are not publishing an incremental update.
+  
+  Consider one of:
+  * 1.0.0 for a first major release.
+  * 0.2.0 for a breaking release.
+  * 0.1.1 for a minor release.
+  
+The server may enforce additional checks.
+
+Package has 0 warnings and 1 hint.

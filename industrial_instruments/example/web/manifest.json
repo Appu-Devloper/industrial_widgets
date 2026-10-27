@@ -1,0 +1,19 @@
+{
+  "name": "Instrument Catalog",
+  "short_name": "Industrial",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#132320",
+  "theme_color": "#132320",
+  "description": "Thirty-three measurement and equipment instruments.",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

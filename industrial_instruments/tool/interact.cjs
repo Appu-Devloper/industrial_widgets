@@ -1,0 +1,12 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});const context=await b.newContext({viewport:{width:1280,height:1200},permissions:['clipboard-read','clipboard-write']});const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(String(e)));await p.goto('http://localhost:8767/?widget=0');await p.waitForTimeout(800);const a=p.locator('flt-semantics-placeholder');if(await a.count())await a.evaluate(e=>e.click());await p.waitForTimeout(300);
+await p.getByRole('button',{name:'Precision',exact:true}).click();await p.getByRole('button',{name:'Instrument',exact:true}).waitFor();
+await p.getByRole('button',{name:'Copy code',exact:true}).click();const code=await p.evaluate(()=>navigator.clipboard.readText());assert(code.includes('RadialGauge(')&&code.includes('InstrumentAppearance.instrument'));
+await p.getByRole('button',{name:'Switch background',exact:true}).click();await p.screenshot({path:'doc/assets/interaction-copy.png'});
+await p.getByRole('switch',{name:'Missing reading',exact:true}).click();await p.waitForTimeout(150);assert((await p.locator('body').innerText()).includes('No reading'));
+await p.getByRole('switch',{name:'Missing reading',exact:true}).click();
+await p.getByRole('slider').press('ArrowRight');
+await p.getByRole('switch',{name:/Animate demo/}).click();await p.waitForTimeout(600);await p.screenshot({path:'doc/assets/animated-dial.png'});
+await p.getByRole('switch',{name:/Animate demo/}).click();
+console.log('copy and appearance/background interaction passed',code);assert.equal(errors.length,0);await b.close();})();
