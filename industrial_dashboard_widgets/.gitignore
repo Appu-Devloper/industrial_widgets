@@ -1,0 +1,9 @@
+.dart_tool/
+.packages
+build/
+coverage/
+*.lock
+.DS_Store
+*.iml
+.idea/
+flutter_*.log

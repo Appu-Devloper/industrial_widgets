@@ -1,0 +1,25 @@
+name: industrial_widgets
+description: Industrial telemetry widgets for Flutter dashboards with gauges, tanks, bounded live trends, alarms, and explicit data quality.
+version: 0.1.0
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+  flutter: '>=3.35.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  uses-material-design: true
+topics:
+  - widgets
+  - dashboard
+  - iot
+  - charts
+repository: https://github.com/Appu-Devloper/industrial_widgets
+issue_tracker: https://github.com/Appu-Devloper/industrial_widgets/issues
+screenshots:
+  - description: Factory Monitor showing live industrial instruments in the dark theme.
+    path: doc/assets/factory-monitor-dark.png

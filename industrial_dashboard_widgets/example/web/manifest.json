@@ -1,0 +1,19 @@
+{
+  "name": "Factory Monitor",
+  "short_name": "Factory",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0B151D",
+  "theme_color": "#0B151D",
+  "description": "Industrial telemetry presentation showcase.",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
